@@ -20,3 +20,8 @@ router.post("/", (req, res) => {
 router.put("/:id", (req, res) => {
   res.send(`Aggiornamento del post ${req.params.id}`);
 });
+
+// Rotta per aggiornare parzialmente un post
+router.patch("/:id", (req, res) => {
+  res.send(`Aggiornamento parziale del post ${req.params.id}`);
+});
