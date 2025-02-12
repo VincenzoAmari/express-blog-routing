@@ -7,7 +7,7 @@ const router = require("./routers/posts");
 
 app.use(express.static("public"));
 
-app.use("/posts", router);
+app.use("/api/posts", router);
 
 app.get("/img/:imageName", (req, res) => {
   res.send(`<img src="/public/img/${req.imageName}" alt="Immagine">`);
