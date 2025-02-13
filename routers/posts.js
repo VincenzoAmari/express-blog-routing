@@ -44,8 +44,6 @@ const post = [
 
 // Rotta per ottenere i post (index)
 router.get("/", (req, res) => {
-  res.send("Lista dei post");
-
   res.json(post);
 });
 
